@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% load static %}
 
 {%block title%}Lobby{% endblock %}
   
@@ -30,8 +31,8 @@
 {% block body %}
   <div class="jumbotron">
     <div class="container">
-      <h1 class="display-3">Chess Gang <img class="mb-1" alt="" width="100" height="100" src="/game/static/chess.png"></h1> 
-      <p>Welcome to Chess Gang! Play real-time multiplayer chess with your friends or just practice on Single Player Mode</p>
+      <h1 class="display-3">Chessverse <img class="mb-1" alt="" width="100" height="100" src="{% static 'chess.png' %}"></h1> 
+      <p>Welcome to Chessverse! Play real-time multiplayer chess with your friends or just practice on Single Player Mode</p>
       <p><a class="btn btn-primary btn-lg" href="/create" role="button">Create a Game &raquo;</a></p>
     </div>
   </div>

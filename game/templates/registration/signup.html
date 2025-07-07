@@ -77,8 +77,8 @@
   <body class="text-center">
     <form class="form-signin" method="post" action="{% url 'register' %}">
       {% csrf_token %}
-      <img class="mb-1" alt="" width="100" height="100" src="/game/static/chess.png">
-      <h1 class="h3 mb-3 font-weight-normal">Chess Gang</h1>
+      <img class="mb-1" alt="" width="100" height="100" src="{% static 'chess.png' %}">
+      <h1 class="h3 mb-3 font-weight-normal">Chessverse</h1>
       <h4 class="mb-3 font-weight-normal">Register</h4>
       {% if messages %}
         {% for message in messages %}
